@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'mymaterials/mylogin.dart';
-import 'mymaterials/login_provider.dart';
+import 'my_studies/my_login.dart.dart';
+import 'my_studies/login_provider.dart';
 
 void main() {
   runApp(MyApp());
