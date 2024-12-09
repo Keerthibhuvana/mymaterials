@@ -34,22 +34,22 @@ class LoginPage extends StatelessWidget {
             loginProvider.isLoading
                 ? CircularProgressIndicator()
                 : ElevatedButton(
-                    onPressed: () async {
-                      try {
-                        await loginProvider.login();
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: Text("Login Successful!"),
-                          backgroundColor: Colors.green,
-                        ));
-                      } catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: Text(e.toString()),
-                          backgroundColor: Colors.red,
-                        ));
-                      }
-                    },
-                    child: Text("Login"),
-                  ),
+              onPressed: () async {
+                try {
+                  await loginProvider.login();
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text("Login Successful!"),
+                    backgroundColor: Colors.green,
+                  ));
+                } catch (e) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text(e.toString()),
+                    backgroundColor: Colors.red,
+                  ));
+                }
+              },
+              child: Text("Login"),
+            ),
           ],
         ),
       ),
